@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-urdu: 'Noto Nastaliq Urdu', 'Amiri', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  line-height: 2.1;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom cinematic animations */
+@keyframes atmosphericPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.04);
+  }
+}
+
+.animate-atmosphere {
+  animation: atmosphericPulse 12s ease-in-out infinite;
+}
+
+@keyframes lightningFlicker {
+  0%, 94%, 100% {
+    opacity: 0.1;
+  }
+  95% {
+    opacity: 0.8;
+  }
+  96% {
+    opacity: 0.2;
+  }
+  97% {
+    opacity: 0.95;
+  }
+  98% {
+    opacity: 0.3;
+  }
+}
+
+.animate-lightning {
+  animation: lightningFlicker 6s infinite;
+}
+
+/* Screenplay manuscript styling */
+.screenplay-font {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}

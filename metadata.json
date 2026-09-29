@@ -1,0 +1,8 @@
+{
+  "name": "The Dragon Guardian & The Kingdom's Love",
+  "description": "An epic Hollywood fantasy movie experience, screenplay studio, and interactive storyboard chronicling the legend of Nawab, the Azure Dragon, and royal love.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
